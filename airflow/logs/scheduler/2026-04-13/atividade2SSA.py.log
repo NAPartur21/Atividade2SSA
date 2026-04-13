@@ -1,0 +1,84 @@
+[2026-04-13T23:43:00.342+0000] {processor.py:186} INFO - Started process (PID=80) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:43:00.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:43:00.401+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:43:00.394+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:43:00.526+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:43:00.499+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:43:00.535+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:43:00.963+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.714 seconds
+[2026-04-13T23:44:47.236+0000] {processor.py:186} INFO - Started process (PID=154) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:44:47.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:44:47.258+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:47.258+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:44:47.330+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:47.314+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:44:47.334+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:44:47.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.190 seconds
+[2026-04-13T23:45:17.703+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:17.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:45:17.719+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:17.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:17.773+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:17.761+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:45:17.779+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:17.867+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.186 seconds
+[2026-04-13T23:45:48.174+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:48.191+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:45:48.208+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:48.207+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:48.439+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:48.318+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:45:48.473+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:45:48.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.740 seconds
+[2026-04-13T23:46:22.463+0000] {processor.py:186} INFO - Started process (PID=329) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:22.472+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:46:22.477+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:22.477+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:22.559+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:22.549+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:46:22.562+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:22.614+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.165 seconds
+[2026-04-13T23:46:25.860+0000] {processor.py:186} INFO - Started process (PID=342) to work on /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:25.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/atividade2SSA.py for tasks to queue
+[2026-04-13T23:46:25.868+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:25.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:25.941+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:25.932+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/atividade2SSA.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/atividade2SSA.py", line 5, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2026-04-13T23:46:25.946+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade2SSA.py
+[2026-04-13T23:46:25.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/atividade2SSA.py took 0.151 seconds

@@ -1,0 +1,69 @@
+[2026-04-13T23:43:01.622+0000] {processor.py:186} INFO - Started process (PID=82) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:43:01.646+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2026-04-13T23:43:01.662+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:43:01.654+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:43:49.063+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:43:49.056+0000] {timeout.py:68} ERROR - Process timed out, PID: 82
+[2026-04-13T23:43:49.065+0000] {logging_mixin.py:190} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f04764b5260>
+[2026-04-13T23:43:49.067+0000] {logging_mixin.py:190} WARNING - Traceback (most recent call last):
+[2026-04-13T23:43:49.069+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/weakref.py", line 369, in remove
+[2026-04-13T23:43:49.072+0000] {logging_mixin.py:190} WARNING -     def remove(k, selfref=ref(self)):
+[2026-04-13T23:43:49.074+0000] {logging_mixin.py:190} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-04-13T23:43:49.083+0000] {logging_mixin.py:190} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-04-13T23:43:49.084+0000] {logging_mixin.py:190} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 82
+[2026-04-13T23:43:50.027+0000] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_from_classic_operator', 'dataset_with_extra_by_context', 'dataset_with_extra_by_yield' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:43:51.526+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:43:51.517+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_with_extra_from_classic_operator
+[2026-04-13T23:44:47.455+0000] {processor.py:186} INFO - Started process (PID=156) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:44:47.456+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2026-04-13T23:44:47.460+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:47.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:44:48.901+0000] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_from_classic_operator', 'dataset_with_extra_by_context', 'dataset_with_extra_by_yield' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:44:49.112+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.111+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_with_extra_by_context
+[2026-04-13T23:44:49.134+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.133+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_with_extra_by_context
+[2026-04-13T23:44:49.147+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.146+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_with_extra_by_context
+[2026-04-13T23:44:49.162+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.162+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_with_extra_by_context
+[2026-04-13T23:44:49.175+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.175+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_with_extra_by_context
+[2026-04-13T23:44:49.189+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.188+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_with_extra_by_context
+[2026-04-13T23:44:49.201+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.201+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_with_extra_by_context
+[2026-04-13T23:44:49.230+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.229+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.269+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.268+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.297+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.296+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.325+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.324+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.348+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.347+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.366+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.365+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.382+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.381+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_with_extra_by_yield
+[2026-04-13T23:44:49.383+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.383+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2026-04-13T23:44:49.430+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.429+0000] {dag.py:3262} INFO - Creating ORM DAG for dataset_with_extra_from_classic_operator
+[2026-04-13T23:44:49.433+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.432+0000] {dag.py:3262} INFO - Creating ORM DAG for dataset_with_extra_by_yield
+[2026-04-13T23:44:49.435+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.435+0000] {dag.py:3262} INFO - Creating ORM DAG for dataset_with_extra_by_context
+[2026-04-13T23:44:49.462+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.462+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_context to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:44:49.468+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.468+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_yield to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:44:49.472+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:44:49.472+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_from_classic_operator to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:44:49.524+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py took 2.079 seconds
+[2026-04-13T23:45:20.001+0000] {processor.py:186} INFO - Started process (PID=220) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:45:20.003+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2026-04-13T23:45:20.014+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:20.012+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:45:21.761+0000] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_by_yield', 'dataset_with_extra_by_context', 'dataset_with_extra_from_classic_operator' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:45:21.834+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:21.834+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2026-04-13T23:45:21.918+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:21.917+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_context to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:45:21.930+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:21.929+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_yield to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:45:21.936+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:21.935+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_from_classic_operator to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:45:21.991+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py took 2.006 seconds
+[2026-04-13T23:45:54.072+0000] {processor.py:186} INFO - Started process (PID=282) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:45:54.287+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2026-04-13T23:45:54.741+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:45:54.740+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:46:10.607+0000] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_by_context', 'dataset_with_extra_from_classic_operator', 'dataset_with_extra_by_yield' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:46:10.689+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:10.688+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2026-04-13T23:46:10.757+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:10.757+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_context to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:10.771+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:10.770+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_yield to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:10.777+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:10.777+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_from_classic_operator to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:11.264+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py took 17.245 seconds
+[2026-04-13T23:46:46.396+0000] {processor.py:186} INFO - Started process (PID=358) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:46:46.400+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2026-04-13T23:46:46.404+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:46.404+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:46:48.453+0000] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_by_context', 'dataset_with_extra_by_yield', 'dataset_with_extra_from_classic_operator' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2026-04-13T23:46:48.502+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:48.501+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2026-04-13T23:46:48.575+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:48.575+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_context to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:48.589+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:48.589+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_by_yield to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:48.594+0000] {logging_mixin.py:190} INFO - [2026-04-13T23:46:48.594+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_with_extra_from_classic_operator to 2026-04-12 00:00:00+00:00, run_after=2026-04-13 00:00:00+00:00
+[2026-04-13T23:46:48.656+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py took 2.272 seconds
